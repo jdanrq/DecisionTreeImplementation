@@ -8,7 +8,7 @@ from src.decisionTree import decision_tree
 
 dataset = load_iris()
 X, Y = dataset['data'], dataset['target']
-data_split = train_test_split(X, Y, test_size=0.3, random_state=2019)
+data_split = train_test_split(X, Y, test_size=0.2, random_state=2020)
 Xtrain, Xtest, Ytrain, Ytest = data_split
 
 model = decision_tree()
@@ -28,7 +28,7 @@ print(results_iris)
 
 dataset = load_breast_cancer()
 X, Y = dataset['data'], dataset['target']
-data_split = train_test_split(X, Y, test_size=0.3, random_state=2019)
+data_split = train_test_split(X, Y, test_size=0.2, random_state=2020)
 Xtrain, Xtest, Ytrain, Ytest = data_split
 
 model = decision_tree()
